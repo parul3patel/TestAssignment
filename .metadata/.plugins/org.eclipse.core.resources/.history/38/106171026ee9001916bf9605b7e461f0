@@ -1,0 +1,107 @@
+package com.firmex.stepDefinition;
+
+import org.apache.log4j.Logger;
+import com.firmex.processor.CommonProcessor;
+import com.firmex.util.CommonUtil;
+import com.firmex.util.Constants.FileType;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.*;
+
+public class CommonSteps {
+
+	private static Logger log = Logger.getLogger(CommonSteps.class);
+
+	@Before()
+	public void beforetest(){
+
+	}
+
+	@After()
+	public void aftertest(){
+		if(CommonUtil.driver != null){
+			CommonUtil.driver.quit();
+		}
+	}
+
+	@And("^user logs out of system$")
+	public void logOut(){
+		try{
+			CommonUtil.driver.quit();
+		}catch(Exception e){
+			log.error("logOut -->"+e.getMessage());
+		}
+	}
+
+	@When("^user clicks on \"([^\"]*)\" link$")
+	public void click_Link(String link) throws Throwable{
+		log.info("Start : User Clicks on "+link);
+		String key = (Character.toLowerCase(link.charAt(0))+(link.length()>1?link.substring(1):"")).toString()+"Link";
+		String locator="";
+		try{
+			locator = CommonUtil.retrieveLocator(link, key);
+			log.info("locator for click link="+locator);
+			Thread.sleep(2000);
+			CommonProcessor.commonClick(locator);
+		}catch(Throwable e){
+			log.warn("Error :: "+e.getLocalizedMessage());
+			CommonUtil.throwCustomException(e.getMessage());
+		}finally{
+			log.info("End : User Clicks on "+link);
+		}
+	}	
+
+
+	@When("^user clicks on \"([^\"]*)\" button$")
+	public void click_buttonJS(String btn) throws Throwable{
+		log.info("Start : User Clicks on "+btn);
+		try{
+			String key = (Character.toLowerCase(btn.charAt(0))+(btn.length()>1?btn.substring(1):"")).toString()+"Button";
+			String locator = CommonUtil.retrieveLocator(btn, key);
+			log.info("locator for click link="+locator);
+			Thread.sleep(6000L);
+			CommonProcessor.clickByJS(locator);
+		}catch(Throwable e){
+			log.warn("Error :: "+e.getLocalizedMessage());
+			CommonUtil.throwCustomException(e.getMessage());
+		}finally{
+			log.info("End : User Clicks on "+btn);
+		}
+	}
+
+	
+	@When("^user enters \"([^\"]*)\" in \"([^\"]*)\" field$")
+	public void user_enters_in_field(String value, String field) throws Throwable {
+		log.info("Start : value entered into field");
+		try{
+			Thread.sleep(1000);
+			value = CommonUtil.getInputText(value);
+			log.info("value"+value);
+			String key = (Character.toLowerCase(field.charAt(0))+(field.length()>1?field.substring(1):"")).toString()+"Text";
+			String locator = CommonUtil.getPropertyValue(CommonUtil.current_page, key, FileType.OR);
+			CommonProcessor.enterValIntoField(value, locator);
+		}catch(Throwable e){
+			log.error(e.getMessage());
+			CommonUtil.throwCustomException(e.getMessage());
+		}finally{
+			log.info("End : value entered into field");
+		}
+	}
+	
+	@When("^user selects \"([^\"]*)\" from regular dropdown menu \"([^\"]*)\"$")
+	public void user_selects_in_RegularDropdown(String option, String field) throws Throwable {
+		log.info("Start : Select from dropdown");
+		try{
+			String key = (Character.toLowerCase(field.charAt(0))+(field.length()>1?field.substring(1):"")).toString()+"DropDown";
+			String locator = CommonUtil.getPropertyValue(CommonUtil.current_page, key, FileType.OR);
+			CommonProcessor.selectRegularOption(locator, option);
+
+		}catch(Throwable e){
+			log.error(e.getMessage());
+			CommonUtil.throwCustomException(e.getMessage());
+		}finally{
+			log.info("End : Select from dropdown");
+		}
+	}
+	
+}

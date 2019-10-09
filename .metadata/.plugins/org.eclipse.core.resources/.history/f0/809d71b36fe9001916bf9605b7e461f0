@@ -1,0 +1,17 @@
+#Author: parul.pat3l@gmail.com
+Feature: TestAssignment-1 - Login Page.
+Story_ID= 1
+
+Scenario Outline: TestAssignment-1|AC-1 - Login Page
+	Given user launched firmex Application
+	When user clicks on "Login" button
+	Then user is on Login page
+	And user enters "User" in "email" field
+	And user clicks on "Next" button
+	And user enters "password" in "password" field
+	And user clicks on "login" button
+	And system displays error message as "errorMessage" for field "errorMessage"
+	And user logs out of system
+	    Examples: 
+      | User  | password | errorMessage |
+      | tester@gmail.com | password   | User credentials are invalid.|

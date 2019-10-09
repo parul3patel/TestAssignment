@@ -1,0 +1,151 @@
+2019-10-08 20:13:15,333 INFO  [Login] Start :: Launch firmex Application 
+2019-10-08 20:13:15,334 INFO  [WebUtil] initializeBrowser starts... 
+2019-10-08 20:13:15,334 INFO  [WebUtil] here 
+2019-10-08 20:13:15,335 INFO  [CommonUtil] set device & browser starts.. 
+2019-10-08 20:13:15,335 INFO  [CommonUtil] device name set to : web 
+2019-10-08 20:13:15,335 INFO  [CommonUtil] browser name set to : ch 
+2019-10-08 20:13:15,335 INFO  [CommonUtil] environment name set to : qa 
+2019-10-08 20:13:15,335 INFO  [CommonUtil] set device & browser ends.. 
+2019-10-08 20:13:15,335 INFO  [WebUtil] here1 
+2019-10-08 20:14:29,057 INFO  [CommonUtil] Setting preferred language starts.. 
+2019-10-08 20:14:29,057 INFO  [CommonUtil] Preferred language is English 
+2019-10-08 20:14:29,058 INFO  [CommonUtil] Preferred Language set to English 
+2019-10-08 20:14:29,058 INFO  [CommonUtil] Fetching preferred language ends.. 
+2019-10-08 20:14:29,058 INFO  [CommonUtil] setORfileName starts.. 
+2019-10-08 20:14:29,058 INFO  [CommonUtil] setting or filename as firmex_EN.ini 
+2019-10-08 20:14:29,058 INFO  [CommonUtil] setORfileName ends.. 
+2019-10-08 20:14:29,058 INFO  [WebUtil] initializeBrowser ends... 
+2019-10-08 20:14:29,059 INFO  [CommonUtil] fetching value starts for [environment] >> qa 
+2019-10-08 20:14:29,455 INFO  [CommonUtil] fetching value ends for [environment] >> qa 
+2019-10-08 20:14:29,455 INFO  [WebUtil] launchBrowser starts... 
+2019-10-08 20:15:05,239 INFO  [WebUtil] launchBrowser ends... 
+2019-10-08 20:15:05,239 INFO  [Login] End :: Launch firmex Application 
+2019-10-08 20:15:05,245 INFO  [CommonSteps] Start : User Clicks on Login 
+2019-10-08 20:15:05,245 INFO  [CommonUtil] Start retrieveLocator.. 
+2019-10-08 20:15:05,245 INFO  [CommonUtil] fetching value starts for [null] >> loginButton 
+2019-10-08 20:15:05,353 INFO  [CommonUtil] searching while ignoring case starts.. 
+2019-10-08 20:15:05,354 WARN  [CommonUtil] null not found in file. 
+2019-10-08 20:15:05,354 INFO  [CommonUtil] searching while ignoring case ends.. 
+2019-10-08 20:15:05,354 ERROR [CommonUtil] Null value found for [null] >> loginButton 
+2019-10-08 20:15:05,354 INFO  [CommonUtil] fetching value ends for [null] >> loginButton 
+2019-10-08 20:15:05,354 INFO  [CommonUtil] fetching value starts for [Common] >> loginButton 
+2019-10-08 20:15:05,355 INFO  [CommonUtil] fetching value ends for [Common] >> loginButton 
+2019-10-08 20:15:05,355 INFO  [CommonUtil] End retrieveLocator.. 
+2019-10-08 20:15:05,355 INFO  [CommonSteps] locator for click link=//*[@class="button login"] 
+2019-10-08 20:15:06,356 INFO  [CommonProcessor] JS Click starts.. 
+2019-10-08 20:15:06,356 INFO  [WebUtil] Getting all WebElements Starts.. 
+2019-10-08 20:15:07,769 INFO  [WebUtil] Getting all WebElements Ends.. 
+2019-10-08 20:15:07,769 INFO  [WebUtil] START :: Moving cursor to webelement 
+2019-10-08 20:15:09,065 INFO  [WebUtil] END :: Moving cursor to webelement 
+2019-10-08 20:15:15,369 INFO  [CommonProcessor] JS Click ends.. 
+2019-10-08 20:15:15,369 INFO  [CommonSteps] End : User Clicks on Login 
+2019-10-08 20:15:21,370 INFO  [LoginPage] Start : Verify Login page loads|web 
+2019-10-08 20:15:21,370 INFO  [LoginPage] 
+
+Current page will be considered as :: Login
+
+ 
+2019-10-08 20:15:21,370 INFO  [LoginPage] End : Verify Login page loads|web 
+2019-10-08 20:15:21,371 INFO  [CommonSteps] Start : value entered into field 
+2019-10-08 20:15:21,871 INFO  [CommonUtil] Start :: getInputText 
+2019-10-08 20:15:21,871 INFO  [CommonUtil] End :: getInputText 
+2019-10-08 20:15:21,871 INFO  [CommonSteps] valuetester@gmail.com 
+2019-10-08 20:15:21,871 INFO  [CommonUtil] fetching value starts for [Login] >> emailText 
+2019-10-08 20:15:21,873 INFO  [CommonUtil] fetching value ends for [Login] >> emailText 
+2019-10-08 20:15:21,873 INFO  [CommonProcessor] enterValIntoField starts.. 
+2019-10-08 20:15:21,873 INFO  [WebUtil] Getting all WebElements Starts.. 
+2019-10-08 20:15:21,928 INFO  [WebUtil] Getting all WebElements Ends.. 
+2019-10-08 20:15:22,206 INFO  [WebUtil] START :: Moving cursor to webelement 
+2019-10-08 20:15:22,222 INFO  [WebUtil] END :: Moving cursor to webelement 
+2019-10-08 20:15:22,811 INFO  [CommonProcessor] enterValIntoField is done 
+2019-10-08 20:15:22,811 INFO  [CommonProcessor] enterValIntoField ends.. 
+2019-10-08 20:15:22,811 INFO  [CommonSteps] End : value entered into field 
+2019-10-08 20:15:22,812 INFO  [CommonSteps] Start : User Clicks on Next 
+2019-10-08 20:15:22,812 INFO  [CommonUtil] Start retrieveLocator.. 
+2019-10-08 20:15:22,812 INFO  [CommonUtil] fetching value starts for [Login] >> nextButton 
+2019-10-08 20:15:22,813 INFO  [CommonUtil] searching while ignoring case starts.. 
+2019-10-08 20:15:22,814 INFO  [CommonUtil] searching while ignoring case ends.. 
+2019-10-08 20:15:22,814 INFO  [CommonUtil] fetching value ends for [Login] >> nextButton 
+2019-10-08 20:15:22,814 INFO  [CommonUtil] fetching value starts for [Common] >> nextButton 
+2019-10-08 20:15:22,814 INFO  [CommonUtil] searching while ignoring case starts.. 
+2019-10-08 20:15:22,815 WARN  [CommonUtil] nextButton not found under Common 
+2019-10-08 20:15:22,815 INFO  [CommonUtil] searching while ignoring case ends.. 
+2019-10-08 20:15:22,815 ERROR [CommonUtil] Null value found for [Common] >> nextButton 
+2019-10-08 20:15:22,815 INFO  [CommonUtil] fetching value ends for [Common] >> nextButton 
+2019-10-08 20:15:22,815 INFO  [CommonUtil] End retrieveLocator.. 
+2019-10-08 20:15:22,815 INFO  [CommonSteps] locator for click link=.//*[@id="username_btn"] 
+2019-10-08 20:15:23,815 INFO  [CommonProcessor] JS Click starts.. 
+2019-10-08 20:15:23,815 INFO  [WebUtil] Getting all WebElements Starts.. 
+2019-10-08 20:15:23,864 INFO  [WebUtil] Getting all WebElements Ends.. 
+2019-10-08 20:15:23,864 INFO  [WebUtil] START :: Moving cursor to webelement 
+2019-10-08 20:15:23,879 INFO  [WebUtil] END :: Moving cursor to webelement 
+2019-10-08 20:15:29,967 INFO  [CommonProcessor] JS Click ends.. 
+2019-10-08 20:15:29,967 INFO  [CommonSteps] End : User Clicks on Next 
+2019-10-08 20:15:29,968 INFO  [CommonSteps] Start : value entered into field 
+2019-10-08 20:15:30,468 INFO  [CommonUtil] Start :: getInputText 
+2019-10-08 20:15:30,468 INFO  [CommonUtil] End :: getInputText 
+2019-10-08 20:15:30,468 INFO  [CommonSteps] valuepassword 
+2019-10-08 20:15:30,468 INFO  [CommonUtil] fetching value starts for [Login] >> passwordText 
+2019-10-08 20:15:30,470 INFO  [CommonUtil] fetching value ends for [Login] >> passwordText 
+2019-10-08 20:15:30,470 INFO  [CommonProcessor] enterValIntoField starts.. 
+2019-10-08 20:15:30,470 INFO  [WebUtil] Getting all WebElements Starts.. 
+2019-10-08 20:15:30,516 INFO  [WebUtil] Getting all WebElements Ends.. 
+2019-10-08 20:15:30,593 INFO  [WebUtil] START :: Moving cursor to webelement 
+2019-10-08 20:15:30,609 INFO  [WebUtil] END :: Moving cursor to webelement 
+2019-10-08 20:15:30,790 INFO  [CommonProcessor] enterValIntoField is done 
+2019-10-08 20:15:30,790 INFO  [CommonProcessor] enterValIntoField ends.. 
+2019-10-08 20:15:30,790 INFO  [CommonSteps] End : value entered into field 
+2019-10-08 20:15:30,790 INFO  [CommonSteps] Start : User Clicks on login 
+2019-10-08 20:15:30,790 INFO  [CommonUtil] Start retrieveLocator.. 
+2019-10-08 20:15:30,790 INFO  [CommonUtil] fetching value starts for [Login] >> loginButton 
+2019-10-08 20:15:30,792 INFO  [CommonUtil] fetching value ends for [Login] >> loginButton 
+2019-10-08 20:15:30,792 INFO  [CommonUtil] fetching value starts for [Common] >> loginButton 
+2019-10-08 20:15:30,793 INFO  [CommonUtil] fetching value ends for [Common] >> loginButton 
+2019-10-08 20:15:30,793 INFO  [CommonUtil] End retrieveLocator.. 
+2019-10-08 20:15:30,794 INFO  [CommonSteps] locator for click link=//*[@id="login_btn"] 
+2019-10-08 20:15:31,794 INFO  [CommonProcessor] JS Click starts.. 
+2019-10-08 20:15:31,794 INFO  [WebUtil] Getting all WebElements Starts.. 
+2019-10-08 20:15:31,818 INFO  [WebUtil] Getting all WebElements Ends.. 
+2019-10-08 20:15:31,818 INFO  [WebUtil] START :: Moving cursor to webelement 
+2019-10-08 20:15:31,830 INFO  [WebUtil] END :: Moving cursor to webelement 
+2019-10-08 20:15:37,912 INFO  [CommonProcessor] JS Click ends.. 
+2019-10-08 20:15:37,912 INFO  [CommonSteps] End : User Clicks on login 
+2019-10-08 20:15:37,913 INFO  [CommonSteps] Start : verify message value 
+2019-10-08 20:15:37,913 INFO  [CommonUtil] fetching value starts for [Login] >> errorMessage 
+2019-10-08 20:15:37,915 INFO  [CommonUtil] fetching value ends for [Login] >> errorMessage 
+2019-10-08 20:15:37,915 INFO  [CommonProcessor] isVisible starts.. 
+2019-10-08 20:15:37,915 INFO  [WebUtil] Getting all WebElements Starts.. 
+2019-10-08 20:15:37,957 INFO  [WebUtil] Getting all WebElements Ends.. 
+2019-10-08 20:15:37,957 INFO  [WebUtil] Getting WebElement Starts.. 
+2019-10-08 20:15:37,982 INFO  [WebUtil] Getting WebElement Ends.. 
+2019-10-08 20:15:37,982 INFO  [WebUtil] START :: Moving cursor to webelement 
+2019-10-08 20:15:37,995 INFO  [WebUtil] END :: Moving cursor to webelement 
+2019-10-08 20:15:38,021 INFO  [CommonProcessor] Field is visible 
+2019-10-08 20:15:38,021 INFO  [CommonProcessor] isVisible ends.. 
+2019-10-08 20:15:38,021 INFO  [CommonProcessor] ValueCheck starts.. 
+2019-10-08 20:15:41,021 INFO  [WebUtil] Getting all WebElements Starts.. 
+2019-10-08 20:15:41,055 INFO  [WebUtil] Getting all WebElements Ends.. 
+2019-10-08 20:15:41,055 INFO  [WebUtil] Getting WebElement Starts.. 
+2019-10-08 20:15:41,081 INFO  [WebUtil] Getting WebElement Ends.. 
+2019-10-08 20:15:41,081 INFO  [WebUtil] START :: Moving cursor to webelement 
+2019-10-08 20:15:41,094 INFO  [WebUtil] END :: Moving cursor to webelement 
+2019-10-08 20:15:41,281 INFO  [CommonProcessor] 
+
+
+Original= User credentials are invalid. Click here to reset your password
+
+
+ 
+2019-10-08 20:15:41,281 INFO  [CommonProcessor] 
+
+Input= User credentials are invalid. Click here to reset your password
+
+ 
+2019-10-08 20:15:41,282 INFO  [CommonProcessor] value matches 
+2019-10-08 20:15:41,282 INFO  [CommonProcessor] End : FieldValueCheck ends.. 
+2019-10-08 20:15:41,282 INFO  [CommonSteps] 
+input Message :: User credentials are invalid. Click here to reset your password
+ 
+2019-10-08 20:15:41,282 INFO  [CommonSteps] End : system display message [User credentials are invalid. Click here to reset your password] in [error] 
+2019-10-08 20:15:41,282 INFO  [CommonSteps] test1 
+2019-10-08 20:15:41,283 INFO  [CommonUtil] D:\WS_FirmexTA\TestAssignment\output\Run_1570502436695 
